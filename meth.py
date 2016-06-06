@@ -17,8 +17,16 @@ def cDiv(numerator,denominator):
 	    numerator -= denominator
 	return quotient
 
+def sqar(number):
+	square = timz(number,number)
+	return square
+
+def qoob(number):
+	cube = timz(sqar(number),number)
+	return cube
+
 def main():
-    arg0 = raw_input('Do you want modd, timz, cDiv or something else? ')
+    arg0 = raw_input('Do you want modd, timz, cDiv, sqar, qoob or something else? ')
 
     if arg0 == 'modd':
 	arg1 = int(raw_input('Numerator: '))
@@ -32,6 +40,12 @@ def main():
 	arg1 = int(raw_input('Numerator: '))
 	arg2 = int(raw_input('Denominator: '))
 	print cDiv(arg1,arg2)
+    elif arg0 == 'sqar':
+	arg1 = int(raw_input('Number: '))
+	print sqar(arg1)
+    elif arg0 == 'qoob':
+	arg1 = int(raw_input('Number: '))
+	print qoob(arg1)
     else:
 	print 'Well we haven\'t got that option yet, so tough noogies!'
 

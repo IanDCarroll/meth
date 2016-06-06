@@ -23,6 +23,17 @@ function cDiv(numerator,denominator) {
 	return quotient;
 }
 
+function sqar(number) {
+	var square = timz(number,number);
+	return square;
+}
+
+function qoob(number) {
+	var cube = timz(sqar(number),number);
+	return cube;
+}
 //console.log(modd(122,60));
 //console.log(timz(6,7));
 //console.log(cDiv(525600,1440));
+//console.log(sqar(5));
+console.log(qoob(5));
