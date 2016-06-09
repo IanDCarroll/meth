@@ -25,8 +25,15 @@ def qoob(number):
 	cube = timz(sqar(number),number)
 	return cube
 
+def paow(number,exponent):
+	result = 1
+	while exponent > 0:
+	    result = timz(number,result)
+	    exponent -=1
+	return result
+
 def main():
-    arg0 = raw_input('Do you want modd, timz, cDiv, sqar, qoob or something else? ')
+    arg0 = raw_input('Do you want modd, timz, cDiv, sqar, qoob, paow or something else? ')
 
     if arg0 == 'modd':
 	arg1 = int(raw_input('Numerator: '))
@@ -46,6 +53,10 @@ def main():
     elif arg0 == 'qoob':
 	arg1 = int(raw_input('Number: '))
 	print qoob(arg1)
+    elif arg0 == 'paow':
+	arg1 = int(raw_input('Number: '))
+	arg2 = int(raw_input('Exponent: '))
+	print paow(arg1,arg2)
     else:
 	print 'Well we haven\'t got that option yet, so tough noogies!'
 
