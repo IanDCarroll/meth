@@ -32,6 +32,17 @@ def paow(number,exponent):
 	    exponent -=1
 	return result
 
+def fibs(sequent):
+	first = 0
+	second = 1
+	savSecond = 0
+	while sequent > 0:
+	    savSecond = second
+	    second += first
+	    first = savSecond
+	    sequent -= 1
+	return second
+
 def main():
     arg0 = raw_input('Do you want modd, timz, cDiv, sqar, qoob, paow or something else? ')
 
