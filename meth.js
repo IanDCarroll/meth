@@ -41,11 +41,35 @@ function paow(number,exponent) {
 	}
 	return result;
 }
+
+function afib(sequent) {
+	var first = 0,
+	    second = 1,
+	    savSecond = 0;
+	while (sequent > 0) {
+	     savSecond = second;
+	     second += first;
+	     first = savSecond;
+	     sequent -= 1;
+	}
+	return first;
+}
+
+function fibs(start,end) {
+	end +=1;
+	var ra = [];
+	for (i=start;i<end;i++)
+	    { ra.push(afib(i)); }
+	return ra;
+}
+
 //console.log(modd(122,60));
 //console.log(timz(6,7));
 //console.log(cDiv(525600,1440));
 //console.log(sqar(5));
 //console.log(qoob(5));
-console.log(paow(5,0));
-console.log(paow(10,2));
+//console.log(paow(5,0));
+//console.log(paow(10,2));
 console.log(paow(2,6));
+console.log(afib(7));
+console.log(fibs(0,13));

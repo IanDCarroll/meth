@@ -32,7 +32,7 @@ def paow(number,exponent):
 	    exponent -=1
 	return result
 
-def fibs(sequent):
+def afib(sequent):
 	first = 0
 	second = 1
 	savSecond = 0
@@ -41,10 +41,17 @@ def fibs(sequent):
 	    second += first
 	    first = savSecond
 	    sequent -= 1
-	return second
+	return first
+
+def fibs(start,end):
+	end += 1
+	ra = []
+	for i in range(start,end):
+	    ra.append(afib(i))
+	return ra
 
 def main():
-    arg0 = raw_input('Do you want modd, timz, cDiv, sqar, qoob, paow or something else? ')
+    arg0 = raw_input('Do you want modd, timz, cDiv, sqar, qoob, paow, afib, fibs or something else? ')
 
     if arg0 == 'modd':
 	arg1 = int(raw_input('Numerator: '))
@@ -68,6 +75,13 @@ def main():
 	arg1 = int(raw_input('Number: '))
 	arg2 = int(raw_input('Exponent: '))
 	print paow(arg1,arg2)
+    elif arg0 == 'afib':
+	arg1 = int(raw_input('Which place in Fibonacci sequence? '))
+	print afib(arg1)
+    elif arg0 == 'fibs':
+	arg1 = int(raw_input('Start of Sequence: '))
+	arg2 = int(raw_input('End of Sequence: '))
+	print fibs(arg1,arg2)
     else:
 	print 'Well we haven\'t got that option yet, so tough noogies!'
 
