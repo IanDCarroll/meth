@@ -50,8 +50,14 @@ def fibs(start,end):
 	    ra.append(afib(i))
 	return ra
 
+def fect(number):
+	fector = 1
+	for i in range(1,number+1):
+	    fector = timz(fector,i)
+	return fector 
+
 def main():
-    arg0 = raw_input('Do you want modd, timz, cDiv, sqar, qoob, paow, afib, fibs or something else? ')
+    arg0 = raw_input('Do you want modd, timz, cDiv, sqar, qoob, paow, afib, fibs, fect or something else? ')
 
     if arg0 == 'modd':
 	arg1 = int(raw_input('Numerator: '))
@@ -82,6 +88,9 @@ def main():
 	arg1 = int(raw_input('Start of Sequence: '))
 	arg2 = int(raw_input('End of Sequence: '))
 	print fibs(arg1,arg2)
+    elif arg0 == 'fect':
+	arg1 = int(raw_input('Number to be fectorialized: '))
+	print fect(arg1)
     else:
 	print 'Well we haven\'t got that option yet, so tough noogies!'
 
