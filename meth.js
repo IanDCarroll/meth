@@ -56,11 +56,18 @@ function afib(sequent) {
 }
 
 function fibs(start,end) {
-	end +=1;
 	var ra = [];
-	for (i=start;i<end;i++)
+	for (i=start;i<end+1;i++)
 	    { ra.push(afib(i)); }
 	return ra;
+}
+
+function fect(number) {
+	fector = 1
+	for (i=1;i<number+1;i++) {
+	    fector = timz(fector,i);
+	}
+	return fector;
 }
 
 //console.log(modd(122,60));
@@ -70,6 +77,7 @@ function fibs(start,end) {
 //console.log(qoob(5));
 //console.log(paow(5,0));
 //console.log(paow(10,2));
-console.log(paow(2,6));
-console.log(afib(7));
-console.log(fibs(0,13));
+//console.log(paow(2,6));
+//console.log(afib(7));
+//console.log(fibs(0,13));
+console.log(fect(5));

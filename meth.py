@@ -44,9 +44,8 @@ def afib(sequent):
 	return first
 
 def fibs(start,end):
-	end += 1
 	ra = []
-	for i in range(start,end):
+	for i in range(start,end+1):
 	    ra.append(afib(i))
 	return ra
 
