@@ -23,12 +23,18 @@ class ud {
 	}
 	return quotient;
     }
+
+    public static int sqar(int number) {
+	int square = timz(number, number);
+	return square;
+    }
 }
 
 public class meth {
     public static void main(String[] args) {
-	System.out.println(ud.modd(137,60));
-	System.out.println(ud.timz(6,7));
-	System.out.println(ud.cDiv(42,6));
+	//System.out.println(ud.modd(137,60));
+	//System.out.println(ud.timz(6,7));
+	//System.out.println(ud.cDiv(42,6));
+	System.out.println(ud.sqar(12));
     }
 }
