@@ -53,10 +53,17 @@ def fect(number):
 	fector = 1
 	for i in range(1,number+1):
 	    fector = timz(fector,i)
-	return fector 
+	return fector
+
+def isPm(number):
+	bouillon = True
+	for i in range(2,number):
+	    if number % i == 0:
+		bouillon = False
+	return bouillon
 
 def main():
-    arg0 = raw_input('Do you want modd, timz, cDiv, sqar, qoob, paow, afib, fibs, fect or something else? ')
+    arg0 = raw_input('Do you want modd, timz, cDiv, sqar, qoob, paow, afib, fibs, fect, isPm or something else? ')
 
     if arg0 == 'modd':
 	arg1 = int(raw_input('Numerator: '))
@@ -90,6 +97,9 @@ def main():
     elif arg0 == 'fect':
 	arg1 = int(raw_input('Number to be fectorialized: '))
 	print fect(arg1)
+    elif arg0 == 'isPm':
+	arg1 = int(raw_input('Enter the number that may be prime: '))
+	print isPm(arg1)
     else:
 	print 'Well we haven\'t got that option yet, so tough noogies!'
 
