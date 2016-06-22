@@ -28,6 +28,11 @@ class ud {
 	int square = timz(number, number);
 	return square;
     }
+
+    public static int qoob(int number) {
+	int cube = timz(sqar(number),number);
+	return cube;
+    }
 }
 
 public class meth {
@@ -35,6 +40,7 @@ public class meth {
 	//System.out.println(ud.modd(137,60));
 	//System.out.println(ud.timz(6,7));
 	//System.out.println(ud.cDiv(42,6));
-	System.out.println(ud.sqar(12));
+	//System.out.println(ud.sqar(12));
+	System.out.println(ud.qoob(5));
     }
 }
