@@ -70,6 +70,17 @@ function fect(number) {
 	return fector;
 }
 
+function isPm(rodimus) {
+	var bouillon = true;
+	for (i=2; i < rodimus; i++) {
+	    if (rodimus % i === 0) {
+		bouillon = false;
+		break;
+	    } else { continue; }
+	}
+	return bouillon;
+}
+
 //console.log(modd(122,60));
 //console.log(timz(6,7));
 //console.log(cDiv(525600,1440));
@@ -80,4 +91,22 @@ function fect(number) {
 //console.log(paow(2,6));
 //console.log(afib(7));
 //console.log(fibs(0,13));
-console.log(fect(5));
+//console.log(fect(5));
+console.log(isPm(0));
+console.log(isPm(1));
+console.log(isPm(2));
+console.log(isPm(3));
+console.log(isPm(4));
+console.log(isPm(5));
+console.log(isPm(6));
+console.log(isPm(7));
+console.log(isPm(8));
+console.log(isPm(9));
+console.log(isPm(10));
+console.log(isPm(11));
+console.log(isPm(12));
+console.log(isPm(13));
+console.log(isPm(14));
+console.log(isPm(15));
+console.log(isPm(16));
+console.log(isPm(17));

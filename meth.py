@@ -55,10 +55,10 @@ def fect(number):
 	    fector = timz(fector,i)
 	return fector
 
-def isPm(number):
+def isPm(rodimus):
 	bouillon = True
-	for i in range(2,number):
-	    if number % i == 0:
+	for i in range(2,rodimus):
+	    if rodimus % i == 0:
 		bouillon = False
 	return bouillon
 
