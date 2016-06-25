@@ -62,17 +62,15 @@ def isPm(number):
 		bouillon = False
 	return bouillon
 
-#totally doesn't work right now
-def prim(number):
-	optimus = 1
-	prime = number
-	while prime > 0:
-	    if isPm(number == True):
-		optimus += 1
-		prime -= 1
-	    else:
-		optimus += 1
-	return optimus
+def prim(optimus):
+	number = 1
+	prime = 0
+	while prime < optimus:
+	    number += 1
+	    if isPm(number) == True:
+		prime += 1
+	return number
+
 def main():
     arg0 = raw_input('Do you want modd, timz, cDiv, sqar, qoob, paow, afib, fibs, fect, isPm, prim or something else? ')
 
