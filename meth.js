@@ -81,6 +81,17 @@ function isPm(rodimus) {
 	return bouillon;
 }
 
+function prim(optimus) {
+	var number = 1,
+	    prime = 0;
+	while (prime < optimus) {
+	    number += 1;
+	    if (isPm(number) == true) {
+		prime += 1;
+	    }
+	}
+	return number;
+}
 //console.log(modd(122,60));
 //console.log(timz(6,7));
 //console.log(cDiv(525600,1440));
@@ -92,21 +103,22 @@ function isPm(rodimus) {
 //console.log(afib(7));
 //console.log(fibs(0,13));
 //console.log(fect(5));
-console.log(isPm(0));
-console.log(isPm(1));
-console.log(isPm(2));
-console.log(isPm(3));
-console.log(isPm(4));
-console.log(isPm(5));
-console.log(isPm(6));
-console.log(isPm(7));
-console.log(isPm(8));
-console.log(isPm(9));
-console.log(isPm(10));
-console.log(isPm(11));
-console.log(isPm(12));
-console.log(isPm(13));
-console.log(isPm(14));
-console.log(isPm(15));
-console.log(isPm(16));
-console.log(isPm(17));
+//console.log(isPm(0));
+//console.log(isPm(1));
+//console.log(isPm(2));
+//console.log(isPm(3));
+//console.log(isPm(4));
+//console.log(isPm(5));
+//console.log(isPm(6));
+//console.log(isPm(7));
+//console.log(isPm(8));
+//console.log(isPm(9));
+//console.log(isPm(10));
+//console.log(isPm(11));
+//console.log(isPm(12));
+//console.log(isPm(13));
+//console.log(isPm(14));
+//console.log(isPm(15));
+//console.log(isPm(16));
+//console.log(isPm(17));
+console.log(prim(42));
