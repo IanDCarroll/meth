@@ -33,6 +33,15 @@ class ud {
 	int cube = timz(sqar(number),number);
 	return cube;
     }
+
+    public static int paow(int number, int exponent) {
+	int result = 1;
+	while (exponent > 0) {
+	    result = timz(number, result);
+	    exponent -= 1;
+	}
+	return result;
+    }
 }
 
 public class meth {
@@ -41,6 +50,7 @@ public class meth {
 	//System.out.println(ud.timz(6,7));
 	//System.out.println(ud.cDiv(42,6));
 	//System.out.println(ud.sqar(12));
-	System.out.println(ud.qoob(5));
+	//System.out.println(ud.qoob(5));
+	System.out.println(ud.paow(2,6));
     }
 }
