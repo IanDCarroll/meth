@@ -42,6 +42,19 @@ class ud {
 	}
 	return result;
     }
+
+    public static int afib(int sequent) {
+	int first = 0,
+	    second = 1,
+	    savSecond = 0;
+	while (sequent > 0) {
+	    savSecond = second;
+	    second += first;
+	    first = savSecond;
+	    sequent -=1;
+	}
+	return first;
+    }
 }
 
 public class meth {
@@ -51,6 +64,7 @@ public class meth {
 	//System.out.println(ud.cDiv(42,6));
 	//System.out.println(ud.sqar(12));
 	//System.out.println(ud.qoob(5));
-	System.out.println(ud.paow(2,6));
+	//System.out.println(ud.paow(2,6));
+	System.out.println(ud.afib(10));
     }
 }
