@@ -1,3 +1,5 @@
+import java.util.*;
+
 class ud {
     public static int modd(int numerator, int modulator) {
 	while (numerator > modulator) {
@@ -55,6 +57,18 @@ class ud {
 	}
 	return first;
     }
+
+/* Warning Message:
+Note: meth.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+*/
+    public static ArrayList fibs(int start, int end) {
+	ArrayList ra = new ArrayList();
+	for (int i = start; i < end + 1; i++) {
+	    ra.add(afib(i));
+	}
+	return ra;
+    }
 }
 
 public class meth {
@@ -65,6 +79,7 @@ public class meth {
 	//System.out.println(ud.sqar(12));
 	//System.out.println(ud.qoob(5));
 	//System.out.println(ud.paow(2,6));
-	System.out.println(ud.afib(10));
+	//System.out.println(ud.afib(10));
+	System.out.println(ud.fibs(0,10));
     }
 }
